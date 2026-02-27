@@ -22,14 +22,14 @@
   content(
     "N",
     anchor: "south-east",
-    $lr(| 0 angle.r)$,
+    $lr(| 0 chevron.r)$,
     padding: 0.04,
   )
 
   content(
     "S",
     anchor: "north-west",
-    $lr(| 1 angle.r)$,
+    $lr(| 1 chevron.r)$,
     padding: 0.04,
   )
 }

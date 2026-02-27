@@ -6,11 +6,14 @@
 #let opts-2 = (angle-labels: false, sphere-style: "sphere")
 
 #let examples = (
-  (czbloch.bloch(state-color: red), `bloch(state-color: red)`),
-  (czbloch.bloch(..czbloch.one, sphere-style: "sphere"), `bloch(.., sphere-style: "sphere")`),
+  (czbloch.bloch(state-color: red), `czbloch.bloch(state-color: red)`),
+  (
+    czbloch.bloch(..czbloch.one, sphere-style: "sphere"),
+    `czbloch.bloch(.., sphere-style: "sphere")`,
+  ),
   (
     czbloch.bloch(..czbloch.plus, ..opts-2, state-color: lime),
-    `bloch(.., angle-labels: false)`,
+    `czbloch.bloch(.., angle-labels: false)`,
   ),
   (
     czbloch.bloch(..czbloch.minus, ..opts-1, state-color: fuchsia),
@@ -22,7 +25,7 @@
   ),
   (
     czbloch.bloch(phi: -10deg, theta: 120deg, ..opts-2, state-color: orange),
-    `bloch(phi: -100deg, theta: 120deg, ..)`,
+    `czbloch.bloch(phi: -100deg, theta: 120deg, ..)`,
   ),
 )
 
